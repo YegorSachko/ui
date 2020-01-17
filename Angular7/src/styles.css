@@ -1,0 +1,197 @@
+input .ng-touched.ng-invalid{
+    border-color:#911E42 
+}
+
+input ng-valid{
+    border-color:rgb(18, 243, 37) 
+}
+
+.green-icon{
+    color:rgb(29, 226, 111);
+}
+.red-icon{
+    color: #911E42;
+}
+#toast-container>div{
+    opacity: 1;
+}
+
+table tr:hover{
+    cursor: pointer;
+}
+.h4m{
+  color:#911E42;
+}
+.format {
+    color: #FDEAA8;
+  
+  }
+  .bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #F5F5DC;
+    border-left-width: 5px;
+    border-radius: 3px;
+  }
+  .bs-callout h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+
+  }
+  .bs-callout p:last-child {
+    margin-bottom: 0;
+  }
+  .bs-callout code {
+    border-radius: 3px;
+  }
+  .bs-callout+.bs-callout {
+    margin-top: -5px;
+  }
+  .bs-callout-default {
+    border-left-color: #808080;
+  }
+  .bs-callout-default h4 {
+    color: #808080;
+  }
+  .bs-callout-primary {
+    border-left-color: rgb(0, 162, 255);
+  }
+  .bs-callout-primary h4 {
+    color: #428bca;
+  }
+  .bs-callout-success {
+    border-left-color: rgb(0, 255, 34);
+  }
+  .bs-callout-success h4 {
+    color: rgb(0, 255, 85);
+  }
+  .bs-callout-danger {
+    border-left-color: #911E42;
+  }
+  .bs-callout-danger h4 {
+    color: #911E42;
+  }
+  .bs-callout-warning {
+    border-left-color: #FFA000;
+  }
+  .bs-callout-warning h4 {
+    color: #FFA000;
+  }
+  .bs-callout-info {
+    border-left-color: #5bc0de; 
+  }
+  .bs-callout-info h4 {
+    color: #5bc0de;
+  }
+  .center{
+    align-content: center;
+    text-align: center;
+  }
+  .collink{
+    color: black;
+  }
+
+  .col-1-4 {
+    width: 25%;
+    float: left;
+  }
+
+  .container:after, .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row {
+    margin-bottom: 15px;
+    border-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: black;
+    border-top-color: black;
+    border-left-color: #808080;
+    border-right-color: #808080;
+  }
+  .bot{
+   position: absolute bottom;
+
+  }
+  .cost{
+    color:black; /* cost and img*/
+  }
+  .own{
+    color: #007FFF; /* owner lot*/
+  }
+
+  .rows {
+    margin-bottom: 15px;
+   
+  }
+  .b{
+    text-align: right;
+  }
+  .c{
+    color: #007FFF; /* i don't no*/
+  }
+  .conte{
+    align-content: center;
+    text-align: center;
+  }
+  .r{
+    background-color:#911E42; /* top and bottom menu*/
+  }
+  .lotitem {
+    margin: 17px 0;
+    padding: 5px;
+    background-color: #911E42; /* i don't*/
+  }
+  .responsive {
+   width: 100%;
+   height: 120px;
+    transition: 3s;
+  }
+  .responsive:hover {
+    width: 100%;
+    height: auto;
+    transform: scale(3);
+  }
+
+  .labe{
+    color:black;
+  }
+
+  .colom{
+    border-style: solid;
+    border-bottom-width: 5px;
+    border-left-color: black;
+    border-right-color: black;
+  }
+  .colom1{
+    border-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+    border-top-color: black;
+  }
+  .wrapper{
+    align-content: center;
+    text-align: center;
+    background-color:black
+  }
+  .wrapped-div{
+    background-color:#808080
+  }
+  .tab-header{
+    background-color:#FCDD76;
+    border-style: solid dotted ;
+    border-color:  #F5F5DC black;
+    border-bottom-width: 2px;
+  }
+.form-control{
+  background-color: #F5F5DC;
+  color:black;
+}
+
+.scale {
+  transition: 2s; /* Время эффекта */
+ }
+ .scale:hover {
+  transform: scale(1.5); /* Увеличиваем масштаб */
+ }

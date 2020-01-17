@@ -1,0 +1,16 @@
+<table class="table table-hover">
+  <tr style="background-color:burlywood"> 
+       <td><b>Name</b></td>
+       <td><b>Price</b></td>
+       <td><b>Owner</b></td>
+       <td></td>
+     </tr>
+<tr *ngFor="let pd of service.list">
+  <td  (click)="populateForm(pd)"><i class="fas fa-cubes"></i><b style="color: coral"> {{pd.Lotname}}</b></td> 
+  <td  style="background-color: darkgrey" (click)="populateForm(pd)">{{pd.Lotprice}} <b><a style="color: green">$</a></b></td>
+  <td  (click)="populateForm(pd)"><i class="fas fa-user-tie"></i><b style="color: aqua"> {{pd.LotOwner}} </b></td>
+  <td>
+    <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.Id)"></i>
+  </td>
+</tr>
+</table>

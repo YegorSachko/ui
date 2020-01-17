@@ -1,0 +1,28 @@
+<form #form="ngForm" class="md-4" autocomplete="off">
+    <div class="center">
+        <img src="https://static05.cminds.com/wp-content/uploads/computer-1331579_1280-1-300x300.png" width="50%" height="100%">
+    </div>
+   <div class="center"> 
+    <div class="form-group">
+        <div class="input-group-text bg-white">
+            <i class="fas fa-id-card-alt" [class.green-icon]="otc.valid" [class.red-icon]="otc.inalid && otc.touched"> Input your login</i>
+        </div>
+      <div> 
+          <input class="form-control" #Login1="ngModel" name="Login1" [(ngModel)]="formModel.Login1" placeholder="Login" required>
+      </div>
+    </div>
+  
+    <div class="form-group">
+        <div class="input-group-text bg-white">
+            <i class="fas fa-key" [class.green-icon]="otc.valid" [class.red-icon]="otc.inalid && otc.touched"> Input your password</i>
+        </div>
+        <div>
+            <input type="password" class="form-control" #Password1="ngModel" name="Password1" [(ngModel)]="formModel.Password1" placeholder="Password" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-success btn-lg btn-block" [disabled]="form.invalid"><i class="fas fa-sign-in-alt" (click)="CheckComein()"></i> Login</button>
+    </div><br>
+    </div>
+</form>

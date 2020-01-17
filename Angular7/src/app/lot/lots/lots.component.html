@@ -1,0 +1,53 @@
+<div class="col-2-4">
+  <div class="center">
+    <div class="conte">
+      <div class="btn-group btn-group-justified" role="group">
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-warning"><a [routerLink]='["/add-lot"]' style="color: black"><b><i class="fas fa-plus-square"></i> Add lot</b></a></button>
+        </div>
+
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-warning"><a [routerLink]='["/lot-menu"]' style="color: black"><b><i class="fas fa-list"></i> View lots</b></a></button>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div><br>
+
+<div>
+  <h4>One tap on <button class="btn btn-warning">button</button> you add <b style="color: #FFA000">10000$</b> to cost</h4>
+</div>
+
+<div class="center">
+  <div style="background-color: #911E42" class="container">
+      <div class="row">
+        <div style="background-color:#F5F5DC" class="col-1-4 lotitem colom" *ngFor="let item of lotService.list">
+          <div style="width:100%">
+            <div class="colom1">
+                <img  class="responsive" src="{{item.LotUrl}}" >
+            </div>
+            <div style="background-color: #911E42" class="colom1">
+                <span class="label label-primary"><b class="labe">{{item.Lotname}}</b></span><br>
+            </div>  
+            <div>
+                <b class="">Owner:</b>
+                <button  class="btn btn-default"><i class="fas fa-user-tag"></i><b class="own">{{item.LotOwner}}</b></button>
+            </div> 
+            <div >
+                <button class="btn btn-warning" (click)="SetBit(item.Id,item.Lotprice);">
+                    <h6 class="cost">
+
+                     {{item.Lotprice}} $<br>  
+                     <h4>
+                         <i class="fab fa-cc-mastercard"></i>
+                         <i class="fab fa-cc-visa"></i>
+                         <i class="fab fa-cc-paypal"></i>
+                     </h4>
+                   </h6>
+                 </button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
