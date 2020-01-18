@@ -7,7 +7,7 @@ import{HttpClient}from "@angular/common/http"
 })
 export class UserService {
  formData:User;
- readonly rootURL='http://localhost:54029/api';
+    readonly rootURL ='https://yahorauction.azurewebsites.net/';
  list:User[];
  
 constructor(private http:HttpClient) { }

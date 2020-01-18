@@ -7,7 +7,7 @@ import { Lot } from './lots.model';
 })
 export class AddlotsService {
  formData:Lot;
- readonly rootURL='http://localhost:54029/api';
+    readonly rootURL ='https://yahorauction.azurewebsites.net/';
  list:Lot[];
  
 constructor(private http:HttpClient) { }

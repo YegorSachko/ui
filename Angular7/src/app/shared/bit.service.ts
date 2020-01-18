@@ -7,7 +7,7 @@ import { Bit } from './bit.model';
 })
 export class BitService {
   formData:Bit;
-  readonly rootURL='http://localhost:54029/api';
+    readonly rootURL ='https://yahorauction.azurewebsites.net/';
   list:Bit[];
 
   constructor(private http:HttpClient) { }
